@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>TinyApp-new_URL</title>
+  </head>
+
+  <body style="font-size:30px; padding:50px;">
+
+      <% include ./partials/_header %>
+
+      <form action="/urls/new" method="POST" style="margin:150px;">
+
+        <label for="longURL">Enter a URL:</label>
+        <input id="longURL" type="text" name="longURL" placeholder="http://" style="width: 300px">
+
+        <input type="submit" value="CREATE">
+
+      </form>
+
+  </body>
+</html>

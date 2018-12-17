@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>TinyApp-URLs</title>
+</head>
+
+
+<body>
+
+<% if (user){ %>
+  <% include ./partials/_header %>
+    <ul>
+      <% for(var url in urls){ %>
+        <li><a href="<%=`${urls[url].longURL}`%>"><%=`${url}`%></a> -----> <a href="<%=`${urls[url].longURL}`%>"><%=`${urls[url].longURL}`%></a></li>
+        <form method="POST" action="/urls/<%=url%>/delete">
+          <button type="submit"><i class="fas fa-trash-alt"></i>Delete</button>
+        </form>
+         <a href="/urls/<%= url%>"><button class="btn"><i class="fas fa-edit" style="width:27px"></i>Edit</button></a>
+
+      <% } %>
+    </ul>
+<% }else{ %>
+    <% include ./partials/_header %>
+<% } %>
+
+  <a href="urls/new">Create a New Short Link</a>
+
+</body>
+</html>

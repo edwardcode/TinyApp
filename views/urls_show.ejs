@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>TinyApp-Update_URLs</title>
+</head>
+
+
+<body>
+
+  <% include ./partials/_header %>
+
+
+
+  <form method="POST" action="/urls/<%= shortURL %>/update">
+    <input id="longURL" type="text" name="longURL" placeholder="http://" style="width: 400px ;height:20px;margin:200px ;color:red"  >
+    <button type="submit"  >Update</button>
+  </form>
+
+  <div>
+    Click <a href="/urls">HERE</a> to back to home page!
+  </div>
+
+</body>
+
+
+</html>

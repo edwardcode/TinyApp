@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>TinyApp-Login</title>
+</head>
+
+
+<body>
+
+  <h1>Please Login:</h1>
+
+  <form method="POST" action="/login">
+    <div>
+      <label for="email">Email:</label>
+      <input id="user_email" type="email" name="user_email" placeholder="Your email" style="width: 300px;margin:23px" >
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" type="password" name="password" placeholder="Your password" style="width: 300px">
+    </div>
+
+    <div>
+      <button type="submit">Login</button>
+    </div>
+
+    <div>
+      Do not have an account yet? Click <a href="/register">HERE</a> to Register!
+    </div>
+
+    <div>
+      Click <a href="/urls">HERE</a> to back to home page!
+    </div>
+  </form>
+
+</body>
+
+</html>

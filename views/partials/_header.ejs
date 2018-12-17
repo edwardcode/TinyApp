@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+  <header>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+   <ul>
+        <% if (!user) { %>
+          <li><a href="/login"><button class='btn' style="width: 66px">Login</button></a></li>
+          <li><a href="/register"><button class='btn'>Register</button></a></li>
+        <% } else { %>
+          <li>Hello, <%= user.email %></li>
+          <li>
+            <form action="/logout?_method=DELETE" method="POST">
+              <button class="btn">Logout</button>
+            </form>
+          </li>
+        <% } %>
+      </ul>
+  </header>
+
+</html>
