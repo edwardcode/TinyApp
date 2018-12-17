@@ -1,12 +1,11 @@
 #TinyApp
 
 TinyApp is a full stack web application built with Node and Express that allows users to shorten a long URLs
-/home/edward/lighthouse/tinyapp/photo/creatnew.png
-/home/edward/lighthouse/tinyapp/photo/edit.png
-/home/edward/lighthouse/tinyapp/photo/login.png
-/home/edward/lighthouse/tinyapp/photo/mainpage.png
-/home/edward/lighthouse/tinyapp/photo/register.png
-
+![alt text](https://github.com/edwardcode/TinyApp/blob/master/photo/creatnew.png )
+![alt text](https://github.com/edwardcode/TinyApp/blob/master/photo/edit.png )
+![alt text]( https://github.com/edwardcode/TinyApp/blob/master/photo/login.png)
+![alt text]( https://github.com/edwardcode/TinyApp/blob/master/photo/mainpage.png)
+![alt text](https://github.com/edwardcode/TinyApp/blob/master/photo/register.png )
 
 ##Dependencies
 1.Node.js
